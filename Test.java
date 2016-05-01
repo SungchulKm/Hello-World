@@ -1,3 +1,9 @@
 import java.lang.*
 
-public static main()
+Class test()
+{
+  System.out.println("Test ...");
+}
+public static main();
+
+
