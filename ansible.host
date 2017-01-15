@@ -1,0 +1,17 @@
+[servers]
+172.31.7.149
+172.31.7.148
+172.31.5.17
+
+[webserver]
+172.31.7.148
+
+[window]
+172.31.14.99
+
+[appserver]
+172.31.5.17
+
+[testserver:children]
+webserver
+appserver

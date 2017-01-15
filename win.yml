@@ -1,0 +1,18 @@
+---
+- name: copy files to window
+  hosts: window
+  tasks:
+  - name: Directory
+    win_file:
+      path: c:\ansible\temp
+      state: directory
+  - name: Copy
+    win_copy:
+      src: ./
+      dest: c:\ansible\temp
+- name: copy files to linux
+  hosts: appserver
+  tasks:
+     - copy:
+        src: ./ansible.host
+        dest: /home/ec2-user/ansible.host

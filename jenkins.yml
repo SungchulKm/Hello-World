@@ -1,0 +1,7 @@
+- name: Jenkins
+  hosts: webserver
+  sudo: yes
+  vars:
+      jenkins_hostname: jekins.example.com
+  roles:
+      - geerlingguy.jenkins

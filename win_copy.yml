@@ -1,0 +1,8 @@
+---
+- name: copy files to window
+  hosts: window
+  tasks:
+  - name: Copy
+    win_copy:
+      src: ../spring.tgz
+      dest: c:\ansible\temp\spring.tgz

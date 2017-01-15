@@ -1,0 +1,8 @@
+---
+- name: copy files to linux
+  hosts: appserver
+  tasks:
+  - name: Copy
+    win_copy:
+      src: ../spring.tgz
+      dest: /home/ec2-user/ansible/spring.tgz
